@@ -139,6 +139,9 @@ export class BaseChartDirective implements OnDestroy, OnChanges, OnInit {
         if (newDataValues[i].label) {
           dataset.label = newDataValues[i].label;
         }
+        if (newDataValues[i].backgroundColor) {
+          dataset.backgroundColor = newDataValues[i].backgroundColor;
+        }
       });
     } else {
       this.chart.data.datasets[0].data = newDataValues;
